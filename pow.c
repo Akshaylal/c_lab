@@ -1,6 +1,15 @@
 #include<stdio.h>
-#include<math.h>
+double pows(double x,int n){
+	if(n==0){
+		return 1;
+	}else{
+		return x*pows(x,n-1);
+	}
+}
+
 void main(){
-	double p=pow(2.0,3.0);
-	printf("%f",p);
+	int x,n;
+	printf("Enter x and y:");
+	scanf("%d%d",&x,&n);
+	printf("%f\n",pows(x,n));
 }
