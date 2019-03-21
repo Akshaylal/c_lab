@@ -1,17 +1,17 @@
 #include<stdio.h>
-void fib(unsigned long int f,unsigned long int s,unsigned long int n){
-	unsigned long int t;
+void fib(int f,int s,int n){
+	int t;
 	if(n!=0){
 		t=f+s;
-		printf("\t%lu",t);
+		printf("\t%d",t);
 		fib(s,t,n-1);
 	}
 }
 
 void main(){
-	unsigned long int n;
+	int n;
 	printf("Enter limit:");
-	scanf("%lu",&n);
+	scanf("%d",&n);
 	printf("0\t1");
 	fib(0,1,n-2);
 	printf("\n");
