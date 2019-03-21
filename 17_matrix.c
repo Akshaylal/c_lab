@@ -55,7 +55,7 @@ void main(){
 	}
 	printf("Enter order of matrix B:");
 	scanf("%d%d",&m2,&n2);
-	printf("Enter the first matrix:\n");
+	printf("Enter the second matrix:\n");
 	for(i=0;i<m2;i++){
 		for(j=0;j<n2;j++){
 			scanf("%d",&b[i][j]);
