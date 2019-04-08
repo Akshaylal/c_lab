@@ -18,7 +18,7 @@ void main(){
 	int i,n;
 	printf("Enter number: ");
 	scanf("%d",&n);
-	float y=1.0;
+	float y=2;
 	for(i=2;i<n;i++){
 		if(!is_prime(i)){
 			y+=(1.0*i)/fact(i);
