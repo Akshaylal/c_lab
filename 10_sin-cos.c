@@ -18,7 +18,7 @@ double sin(double x){
 	x=x*pi/180;
 	int i;
 	for(i=0;i<20;i++){
-		s+=(pows(-1,i)*pows(x,(2*i)))/fact(2*i);
+		s+=(pows(-1,i)*pows(x,(2*i+1)))/fact(2*i+1);
 	}
 	return s;
 }
@@ -28,7 +28,7 @@ double cos(double x){
 	x=x*pi/180;
 	int i;
 	for(i=0;i<20;i++){
-		s+=(pows(-1,i)*pows(x,(2*i+1)))/fact(2*i+1);
+		s+=(pows(-1,i)*pows(x,(2*i)))/fact(2*i);
 	}
 	return s;
 }
