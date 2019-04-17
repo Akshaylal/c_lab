@@ -6,7 +6,7 @@ int fact(int n){
 
 int is_prime(int n){
 	int i;
-	for(i=0;i<n;i++){
+	for(i=n-1;i>1;i--){
 		if((n%i)==0){
 			return 0;
 		}
