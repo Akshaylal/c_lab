@@ -93,7 +93,7 @@ void main(){
 			break;
 			case 3:copy(s1,s2);
 			break;
-			case 4:printf("first string=%d\tsecond string=%d\n",strlen(s1),strlen(s2));
+			case 4:printf("first string=%ld\tsecond string=%ld\n",strlen(s1),strlen(s2));
 			break;
 			case 5:rev(s1,s2);
 			break;
