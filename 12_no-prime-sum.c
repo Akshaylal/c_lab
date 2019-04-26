@@ -6,6 +6,9 @@ int fact(int n){
 
 int is_prime(int n){
 	int i;
+	if(n==1){
+		return 0;
+	}
 	for(i=2;i<n;i++){
 		if((n%i)==0){
 			return 0;
@@ -15,14 +18,15 @@ int is_prime(int n){
 }
 
 void main(){
-	int i,n;
+	int i,n,k;
 	printf("Enter number: ");
 	scanf("%d",&n);
-	float y=2;
-	for(i=2;i<n;i++){
-		if(!is_prime(i)){
-			y+=(1.0*i)/fact(i);
+	float y=0;
+	for(i=1;i<n;i++){
+		y+=(1.0*i)/fact(i);
+		k=(int)y;
+		if(!is_prime(k)){
+			printf("%d\n",k);
 		}
 	}
-	printf("%f\n",y);
 }
