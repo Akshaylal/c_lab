@@ -46,12 +46,12 @@ void transpose(int a[20][20],int b[20][20],int m1,int n1,int m2,int n2){
 	int i,j,c[20][20],d[20][20];
 	for(i=0;i<m1;i++){
 		for(j=0;j<n1;j++){
-			c[i][j]=a[j][i];
+			c[j][i]=a[i][j];
 		}
 	}
 	for(i=0;i<m2;i++){
 		for(j=0;j<n2;j++){
-			d[i][j]=b[j][i];
+			d[j][i]=b[i][j];
 		}
 	}
 	printf("Matrix 1\n");
