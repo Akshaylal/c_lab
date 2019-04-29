@@ -21,12 +21,12 @@ void main(){
 	int i,n,k;
 	printf("Enter number: ");
 	scanf("%d",&n);
-	float y=0;
-	for(i=1;i<n;i++){
+	float y=1;
+	for(i=0;i<n;i++){
 		y+=(1.0*i)/fact(i);
 		k=(int)y;
 		if(!is_prime(k)){
-			printf("%d\n",k);
+			printf("%f\n",y);
 		}
 	}
 }
