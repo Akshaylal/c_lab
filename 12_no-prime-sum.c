@@ -18,15 +18,14 @@ int is_prime(int n){
 }
 
 void main(){
-	int i,n,k;
+	int i,n;
 	printf("Enter number: ");
 	scanf("%d",&n);
-	float y=1;
-	for(i=0;i<n;i++){
-		y+=(1.0*i)/fact(i);
-		k=(int)y;
-		if(!is_prime(k)){
-			printf("%f\n",y);
+	int y=1;
+	for(i=1;i<n;i++){
+		y+=fact(i)/i;
+		if(!is_prime(y)){
+			printf("%d\n",y);
 		}
 	}
 }
