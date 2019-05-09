@@ -31,7 +31,7 @@ void main(){
 	}
 	for(i=0;i<n;i++){
 		printf("\nName: %s\n",s[i].name);
-		printf("Enter Roll number: %d\n",s[i].roll_no);
-		printf("Enter Address: %s\n",s[i].address);
+		printf("Roll number: %d\n",s[i].roll_no);
+		printf("Address: %s\n",s[i].address);
 	}
 }
